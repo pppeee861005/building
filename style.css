@@ -112,6 +112,16 @@ main {
     margin-bottom: 0;
 }
 
+.service-card p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card p a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;

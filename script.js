@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 根据卡片标题跳转到相应页面
             switch(cardTitle) {
                 case '通知中心':
-                    window.location.href = 'notifications/notifications.html';
+                    window.location.href = 'https://pppeee861005.github.io/building/notifications.html';
                     break;
                 default:
                     alert('此功能即將推出');
@@ -63,7 +63,7 @@ function showNotificationBadge(count) {
     notificationBadge.textContent = count;
     
     // 找到通知链接并添加徽章
-    const notificationLink = document.querySelector('nav a[href="notifications/notifications.html"]');
+    const notificationLink = document.querySelector('nav a[href="https://pppeee861005.github.io/building/notifications.html"]');
     if(notificationLink) {
         // 移除已有的徽章（如果有）
         const existingBadge = notificationLink.querySelector('.notification-badge');
