@@ -1,0 +1,113 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.notification-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #f0f7ff;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification-item {
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.notification-item:hover {
+    transform: translateX(5px);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.notification-type {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.notification-time {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.notification-content {
+    color: #333;
+}
+
+/* 根據通知類型設置不同顏色 */
+.notification-item[data-type="包裹"] {
+    border-left-color: #28a745;
+}
+
+.notification-item[data-type="系統"] {
+    border-left-color: #ffc107;
+}
+
+.notification-item[data-type="安全"] {
+    border-left-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .notification-container {
+        padding: 15px;
+    }
+}
